@@ -22,12 +22,13 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
+              "node_modules/font-awesome/css/font-awesome.css",
               "src/styles.sass"
             ],
             "scripts": []
@@ -45,7 +46,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-ufm"
+    }
+  },
+  "defaultProject": "angular-ufm",
+  "cli": {
+    "analytics": "bb517d59-f077-4067-b87c-c3c46b8684bb"
+  }
 }

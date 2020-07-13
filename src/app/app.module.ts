@@ -1,18 +1,22 @@
+import { HomeComponent } from './home/home.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+import { appRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
-import {UfmModule} from "./ufm/ufm.module";
+import { MonitoringComponent } from './monitoring/monitoring.component';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        MonitoringComponent,
+        SettingsComponent,
+        HomeComponent
     ],
     imports: [
         BrowserModule,
-        AppRoutingModule,
-        UfmModule
+        appRoutingModule
     ],
     providers: [],
     bootstrap: [AppComponent]
